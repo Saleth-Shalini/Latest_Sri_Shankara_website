@@ -130,6 +130,39 @@
                 </div> -->
             </div>
 
+            <!-- Publications -->
+            <div class="publications-section-word">
+                <h2 class="section-title-word">Publications</h2>
+                <div class="publications-toolbar-word">
+                    <input type="search" class="publications-search-input-word" placeholder="Search publications..." aria-label="Search publications">
+                    <button type="button" class="publications-filter-btn-word" aria-expanded="false" aria-controls="publicationsFilterPanel">
+                        Search and Filter
+                    </button>
+                </div>
+                <div class="publications-filter-panel-word" id="publicationsFilterPanel">
+                    <div class="publications-filter-group-word">
+                        <label for="publicationsYearFilter">Year</label>
+                        <select id="publicationsYearFilter" class="publications-filter-select-word publications-year-filter-word">
+                            <option value="">All Years</option>
+                        </select>
+                    </div>
+                    <div class="publications-filter-group-word">
+                        <label for="publicationsTypeFilter">Type</label>
+                        <select id="publicationsTypeFilter" class="publications-filter-select-word publications-type-filter-word">
+                            <option value="">All Types</option>
+                            <option value="journal">Journal Article</option>
+                            <option value="conference">Conference Paper</option>
+                            <option value="book">Book / Chapter</option>
+                            <option value="case">Case Report</option>
+                        </select>
+                    </div>
+                    <button type="button" class="publications-filter-clear-word">Clear Filters</button>
+                </div>
+                <ul class="publications-list-word" aria-live="polite">
+                </ul>
+                <p class="publications-empty-word">No publications listed yet. Please check back soon.</p>
+            </div>
+
             <!-- Bottom Section with Timings and Languages -->
             <div class="bottom-section-word">
                 <!-- Timings -->
