@@ -1,0 +1,174 @@
+RewriteEngine On
+
+
+# FORCE HTTPS + NON-WWW (CANONICAL URL)
+
+# Redirect HTTP OR WWW to HTTPS non-www
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\.srishankaracancerhospital\.org$ [NC]
+RewriteRule ^ https://srishankaracancerhospital.org%{REQUEST_URI} [R=301,L]
+
+
+# OLD DOCTOR PROFILE URLS (Google sitelinks / legacy filenames)
+
+Redirect 301 "/Doctors/Dr.%20B.%20S.%20Srinath.html" "/Doctors/Dr-B-S-Srinath"
+Redirect 301 "/Doctors/Dr.%20B.%20S.%20Srinath" "/Doctors/Dr-B-S-Srinath"
+RewriteRule ^Doctors/Dr\.\ B\.\ S\.\ Srinath\.html$ /Doctors/Dr-B-S-Srinath [R=301,L]
+RewriteRule ^Doctors/Dr\.\ B\.\ S\.\ Srinath/?$ /Doctors/Dr-B-S-Srinath [R=301,L]
+
+# Doctor Pages
+
+Redirect 301 "/Doctors/Dr. Raghunath S. K..html" "/Doctors/Dr-Raghunath-S-K"
+Redirect 301 "/Doctors/Dr. Sudha Sah.html" "/Doctors/Dr-Sudha-Sah"
+Redirect 301 "/Doctors/Mr. T. V. Kumareshwar.html" "/Doctors/Mr-T-V-Kumareshwar"
+Redirect 301 "/Doctors/Dr. Radhika Kapahtia.html" "/Doctors/Dr-Radhika-Kapahtia"
+Redirect 301 "/Doctors/Dr. Vinu Priya D..html" "/Doctors/Dr-Vinu-Priya-D"
+Redirect 301 "/Doctors/Dr. Rekha V. Kumar.html" "/Doctors/Dr-Rekha-V-Kumar"
+Redirect 301 "/Doctors/Dr. Praveen K. S..html" "/Doctors/Dr-Praveen-K-S"
+Redirect 301 "/Doctors/Dr. Prasanna Kumari.html" "/Doctors/Dr-Prasanna-Kumari"
+Redirect 301 "/Doctors/Dr. Subhashree T.html" "/Doctors/Dr-Subhashree-T"
+Redirect 301 "/Doctors/Dr. Sunil Kalmath.html" "/Doctors/Dr-Sunil-Kalmath"
+Redirect 301 "/Doctors/Dr. Anulatha Holla.html" "/Doctors/Dr-Anulatha-Holla"
+Redirect 301 "/Doctors/Dr. Dipanwita Chakraborty.html" "/Doctors/Dr-Dipanwita-Chakraborty"
+Redirect 301 "/Doctors/Dr. Sruthy S.html" "/Doctors/Dr-Sruthy-S"
+Redirect 301 "/Doctors/Dr. Sonal Asthana.html" "/Doctors/Dr-Sonal-Asthana"
+Redirect 301 "/Doctors/Dr. Sharath Chandra K. S.html" "/Doctors/Dr-Sharath-Chandra-K-S"
+Redirect 301 "/Doctors/Dr. Guruprasad Shenoy.html" "/Doctors/Dr-Guruprasad-Shenoy"
+Redirect 301 "/Doctors/Dr. Nethra R.html" "/Doctors/Dr-Nethra-R"
+Redirect 301 "/Doctors/Dr. Shanthi Velusamy.html" "/Doctors/Dr-Shanthi-Velusamy"
+Redirect 301 "/Doctors/Dr. Govinda Babu K.html" "/Doctors/Dr-Govinda-Babu-K"
+Redirect 301 "/Doctors/Dr. Gayathri J..html" "/Doctors/Dr-Gayathri-J"
+
+# Department Pages
+
+Redirect 301 "/Departments/Nephrology_Department" "/Departments/nephrology"
+Redirect 301 "/Departments/Head_Neck_Cancer_Oncology_Department" "/Departments/head-and-neck-oncology"
+Redirect 301 "/Departments/Molecular_Oncology_Department_Complete" "/Departments/molecular-oncology"
+Redirect 301 "/Departments/Genito-Urinary_Oncology_Care.html" "/Departments/genitourinary-oncology"
+
+# Cancer Pages
+
+Redirect 301 "/Cancer-We-Treat/Liver_Cancer" "/Cancer-We-Treat/Liver-Cancer"
+Redirect 301 "/Cancer-We-Treat/Gynecologic_Cancers.html" "/Cancer-We-Treat/Gynecologic-Cancers"
+Redirect 301 "/Cancer-We-Treat/Testicular_Cancer.html" "/Cancer-We-Treat/Testicular-Cancer"
+Redirect 301 "/Cancer-We-Treat/Kidney_Cancer.html" "/Cancer-We-Treat/Kidney-Cancer"
+
+# Patient Services
+Redirect 301 "/patient-services/International-Patients.html" "/patient-services/international-patients"
+
+# Homepage
+
+Redirect 301 "/index" "/"
+
+# ===== Google Search Console 404 Redirects =====
+
+Redirect 301 "/Cancerpedia/Lung_Cancer.html" "/Cancerpedia/Lung-Cancer"
+
+Redirect 301 "/Cancerpedia/Skin Cancer.html" "/Cancer-We-Treat/Skin-Cancer"
+
+Redirect 301 "/Cancerpedia/Ovarian Cancer.html" "/Cancer-We-Treat/Ovarian-Cancer"
+
+Redirect 301 "/Cancerpedia/Breast_Cancer.html" "/Cancer-We-Treat/Breast-Cancer"
+
+Redirect 301 "/Cancerpedia/brain_tumours.html" "/Cancer-We-Treat/brain-tumours"
+
+Redirect 301 "/Cancerpedia/gastrointestinal_cancer.html" "/Cancer-We-Treat/gastrointestinal-cancer"
+
+Redirect 301 "/Cancerpedia/Childhood_Acute_Lymphocytic_Leukemia.html" "/Cancer-We-Treat/Acute-Lymphocytic-Leukaemia-(ALL)"
+
+Redirect 301 "/Cancerpedia/Kidney_Cancer.html" "/Cancer-We-Treat/Kidney-Cancer"
+
+Redirect 301 "/Cancerpedia/Gynecologic_Cancers.html" "/Cancer-We-Treat/Gynecologic-Cancers"
+
+Redirect 301 "/Cancerpedia/cancerpedia_index.html" "/Cancer-We-Treat/cancerpedia-index"
+
+Redirect 301 "/Cancerpedia/Adrenal_Tumours.html" "/Cancer-We-Treat/Adrenal-Tumours"
+
+Redirect 301 "/Cancerpedia/Testicular_Cancer.html" "/Cancer-We-Treat/Testicular-Cancer"
+
+Redirect 301 "/Cancerpedia/Pancreatic_Cancer.html" "/Cancer-We-Treat/Pancreatic-Cancer"
+
+Redirect 301 "/center-of-exellence/Bone-Marrow-Transplant.html" "/Center-Of-Exellence/bone-marrow-transplant"
+
+Redirect 301 "/center-of-exellence/Paediatric-Oncology.html" "/Center-Of-Exellence/paediatric-oncology"
+
+Redirect 301 "/Doctors/Dr. Rekha B. R..html" "/Doctors/Dr-Rekha-B-R"
+
+Redirect 301 "/center-of-exellence/Lung-Cancer-Care.html" "/Center-Of-Exellence/lung-cancer"
+
+Redirect 301 "/center-of-exellence/Gynaecologic-Oncology.html" "/Center-Of-Exellence/gynaecologic-oncology"
+
+Redirect 301 "/center-of-exellence/Breast-Cancer-Care.html" "/Center-Of-Exellence/breast-cancer"
+
+Redirect 301 "/center-of-exellence/Ophthalmic-Oncology.html" "/Center-Of-Exellence/ophthalmic-oncology"
+
+Redirect 301 "/Doctors/Dr. Guruprasad C Shenoy.html" "/Doctors/Dr-Guruprasad-Shenoy"
+
+Redirect 301 "/Doctors/Dr. Vijaisimha.html" "/Doctors/Dr-Vijai-Simha"
+
+Redirect 301 "/center-of-exellence/Robotic-Surgery.html" "/Center-Of-Exellence/robotic-surgery"
+
+Redirect 301 "/home/Sri-Shankara-Cancer-Hospital-and-Research-Centre.html" "/"
+
+Redirect 301 "/cancer-we-treat/All-Types-Cancer.html" "/Cancer-We-Treat/cancerpedia-index"
+
+
+Redirect 301 "/patient-services/services" "/Diagnosis-&-Screening/cancer-screening-packages"
+Redirect 301 "/Doctors/Cancer-Specialists" "/Doctors/cancer-specialists"
+Redirect 301 "/Departments/Radiation_Oncology_Department" "/Departments/radiation-oncology"
+Redirect 301 "/Cancer-We-Treat/gastrointestinal_cancer" "/Cancer-We-Treat/gastrointestinal-cancer"
+Redirect 301 "/Departments/Plastic_Reconstructive_Surgery" "/Departments/plastic-and-reconstructive-surgery"
+Redirect 301 "/Doctors/Dr. Prithvi B. S..html" "/Doctors/Dr-Prithvi-B-S"        
+Redirect 301 "/headerbutton/Terms-of-Use,Disclaimer,Sitemap" "/headerbutton/SSCHRC-Website-Privacy-Policy.pdf"
+Redirect 301 "/headerbutton/SSCHRC%20Website%20Privacy%20Policy.pdf" "/headerbutton/SSCHRC-Website-Privacy-Policy.pdf"
+Redirect 301 "/Doctors/Dr. Tapas Patra.html" "/Doctors/Dr-Tapas-Patra"
+Redirect 301 "/Doctors/Dr. Sreeram M. P.html" "/Doctors/Dr-Sreeram-M-P"
+Redirect 301 "/Doctors/Dr. Annapurna V.html" "/Doctors/Dr-Annapurna-V"
+Redirect 301 "/Doctors/Dr. Bhargav Raj.html" "/Doctors/Dr-Bhargav-Raj"
+Redirect 301 "/Doctors/Dr. Manasa C.html" "/Doctors/Dr-Manasa-C"
+Redirect 301 "/Doctors/Dr. Karthik S. Rishi.html" "/Doctors/Dr-Karthik-S-Rishi"
+Redirect 301 "/Doctors/Dr. Sunitha B. S..html" "/Doctors/Dr-Sunitha-B-S"
+Redirect 301 "/Doctors/Dr. Nanjundappa.html" "/Doctors/Dr-Nanjundappa"
+Redirect 301 "/Doctors/Dr. Zankhanna Bush.html" "/Doctors/Dr-Zankhanna-Bush"
+Redirect 301 "/Center-Of-Exellence/Breast-Cancer-Care" "/Center-Of-Exellence/breast-cancer"
+Redirect 301 "/Doctors/Dr. Sandhya Appachu M..html" "/Doctors/Dr-Sandhya-Appachu-M"
+Redirect 301 "/Doctors/Dr. Vishnupriya M.html" "/Doctors/Dr-Vishnupriya-M"
+Redirect 301 "/Doctors/Sahithi Guntamadugu" "/Doctors/Ms-Sahithi-Guntamadugu"
+Redirect 301 "/Doctors/Dr. Abhay K Kattepur.html" "/Doctors/Dr-Abhay-K-Kattepur"
+
+Redirect 301 "/patient-services/International-Patients" "/patient-services/international-patients"
+Redirect 301 "/Center-Of-Exellence/Lung-Cancer-Care" "/Center-Of-Exellence/lung-cancer"
+Redirect 301 "/Departments/Domiciliary_Care_Services" "/Departments/domiciliary-care"
+Redirect 301 "/Departments/Genito-Urinary_Oncology_Care" "/Departments/genitourinary-oncology"
+Redirect 301 "/Departments/Gynaecological_Oncology_Department.html" "/Departments/gynaecological-oncology"
+Redirect 301 "/Departments/Integrative_Oncology" "/Departments/integrative-oncology"
+Redirect 301 "/Departments/Microbiology_Virology_Department" "/Departments/microbiology-and-virology"
+Redirect 301 "/Departments/Physiotherapy_Rehabilitation_Department" "/Departments/physiotherapy-and-rehabilitation"
+
+
+# REMOVE SLASH
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)/$ https://srishankaracancerhospital.org/$1 [R=301,L]
+
+
+# REMOVE .HTML FROM URL (SEO CLEAN URL)
+
+RewriteCond %{THE_REQUEST} \s/([^.]+)\.html [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+
+# INTERNALLY MAP CLEAN URL → .HTML FILE
+
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+)$ $1.html [L]
+
+
+# BLOCK DIRECTORY LISTING
+
+Options -Indexes
+
+
+# ERROR PAGE
+
+ErrorDocument 404 /404.html

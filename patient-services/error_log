@@ -1,0 +1,100 @@
+[02-Feb-2026 06:31:53 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "EMAIL_SUBJECT" in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php:242
+Stack trace:
+#0 {main}
+  thrown in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 242
+[02-Feb-2026 07:14:27 UTC] PHP Warning:  Constant SMTP_HOST already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 13
+[02-Feb-2026 07:14:27 UTC] PHP Warning:  Constant SMTP_PORT already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 14
+[02-Feb-2026 07:14:27 UTC] PHP Warning:  Constant SMTP_USERNAME already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 15
+[02-Feb-2026 07:14:27 UTC] PHP Warning:  Constant SMTP_PASSWORD already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 16
+[02-Feb-2026 07:14:27 UTC] PHP Warning:  Constant SMTP_ENCRYPTION already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 17
+[02-Feb-2026 07:14:27 UTC] PHP Warning:  Constant USE_SMTP already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 18
+[02-Feb-2026 07:21:13 UTC] PHP Warning:  Constant SMTP_HOST already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 13
+[02-Feb-2026 07:21:13 UTC] PHP Warning:  Constant SMTP_PORT already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 14
+[02-Feb-2026 07:21:13 UTC] PHP Warning:  Constant SMTP_USERNAME already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 15
+[02-Feb-2026 07:21:13 UTC] PHP Warning:  Constant SMTP_PASSWORD already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 16
+[02-Feb-2026 07:21:13 UTC] PHP Warning:  Constant SMTP_ENCRYPTION already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 17
+[02-Feb-2026 07:21:13 UTC] PHP Warning:  Constant USE_SMTP already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 18
+[02-Feb-2026 07:25:35 UTC] PHP Warning:  Constant SMTP_HOST already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 13
+[02-Feb-2026 07:25:35 UTC] PHP Warning:  Constant SMTP_PORT already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 14
+[02-Feb-2026 07:25:35 UTC] PHP Warning:  Constant SMTP_USERNAME already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 15
+[02-Feb-2026 07:25:35 UTC] PHP Warning:  Constant SMTP_PASSWORD already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 16
+[02-Feb-2026 07:25:35 UTC] PHP Warning:  Constant SMTP_ENCRYPTION already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 17
+[02-Feb-2026 07:25:35 UTC] PHP Warning:  Constant USE_SMTP already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 18
+[02-Feb-2026 07:26:05 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "EMAIL_SUBJECT_BASE" in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php:254
+Stack trace:
+#0 {main}
+  thrown in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 254
+[02-Feb-2026 07:31:31 UTC] PHP Warning:  Constant SMTP_HOST already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 13
+[02-Feb-2026 07:31:31 UTC] PHP Warning:  Constant SMTP_PORT already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 14
+[02-Feb-2026 07:31:31 UTC] PHP Warning:  Constant SMTP_USERNAME already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 15
+[02-Feb-2026 07:31:31 UTC] PHP Warning:  Constant SMTP_PASSWORD already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 16
+[02-Feb-2026 07:31:31 UTC] PHP Warning:  Constant SMTP_ENCRYPTION already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 17
+[02-Feb-2026 07:31:31 UTC] PHP Warning:  Constant USE_SMTP already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 18
+[02-Feb-2026 07:37:57 UTC] PHP Warning:  Constant SMTP_HOST already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 13
+[02-Feb-2026 07:37:57 UTC] PHP Warning:  Constant SMTP_PORT already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 14
+[02-Feb-2026 07:37:57 UTC] PHP Warning:  Constant SMTP_USERNAME already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 15
+[02-Feb-2026 07:37:57 UTC] PHP Warning:  Constant SMTP_PASSWORD already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 16
+[02-Feb-2026 07:37:57 UTC] PHP Warning:  Constant SMTP_ENCRYPTION already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 17
+[02-Feb-2026 07:37:57 UTC] PHP Warning:  Constant USE_SMTP already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 18
+[02-Feb-2026 07:37:57 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "EMAIL_SUBJECT_BASE" in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php:238
+Stack trace:
+#0 {main}
+  thrown in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 238
+[02-Feb-2026 07:53:44 UTC] PHP Warning:  Constant SMTP_HOST already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 13
+[02-Feb-2026 07:53:44 UTC] PHP Warning:  Constant SMTP_PORT already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 14
+[02-Feb-2026 07:53:44 UTC] PHP Warning:  Constant SMTP_USERNAME already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 15
+[02-Feb-2026 07:53:44 UTC] PHP Warning:  Constant SMTP_PASSWORD already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 16
+[02-Feb-2026 07:53:44 UTC] PHP Warning:  Constant SMTP_ENCRYPTION already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 17
+[02-Feb-2026 07:53:44 UTC] PHP Warning:  Constant USE_SMTP already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 18
+[02-Feb-2026 07:53:44 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "EMAIL_SUBJECT_BASE" in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php:241
+Stack trace:
+#0 {main}
+  thrown in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 241
+[02-Feb-2026 07:56:14 UTC] PHP Warning:  Constant SMTP_HOST already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 13
+[02-Feb-2026 07:56:14 UTC] PHP Warning:  Constant SMTP_PORT already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 14
+[02-Feb-2026 07:56:14 UTC] PHP Warning:  Constant SMTP_USERNAME already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 15
+[02-Feb-2026 07:56:14 UTC] PHP Warning:  Constant SMTP_PASSWORD already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 16
+[02-Feb-2026 07:56:14 UTC] PHP Warning:  Constant SMTP_ENCRYPTION already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 17
+[02-Feb-2026 07:56:14 UTC] PHP Warning:  Constant USE_SMTP already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 18
+[02-Feb-2026 09:35:32 UTC] PHP Warning:  Constant SMTP_HOST already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 13
+[02-Feb-2026 09:35:32 UTC] PHP Warning:  Constant SMTP_PORT already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 14
+[02-Feb-2026 09:35:32 UTC] PHP Warning:  Constant SMTP_USERNAME already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 15
+[02-Feb-2026 09:35:32 UTC] PHP Warning:  Constant SMTP_PASSWORD already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 16
+[02-Feb-2026 09:35:32 UTC] PHP Warning:  Constant SMTP_ENCRYPTION already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 17
+[02-Feb-2026 09:35:32 UTC] PHP Warning:  Constant USE_SMTP already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 18
+[02-Feb-2026 10:05:43 UTC] PHP Warning:  Constant SMTP_HOST already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 13
+[02-Feb-2026 10:05:43 UTC] PHP Warning:  Constant SMTP_PORT already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 14
+[02-Feb-2026 10:05:43 UTC] PHP Warning:  Constant SMTP_USERNAME already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 15
+[02-Feb-2026 10:05:43 UTC] PHP Warning:  Constant SMTP_PASSWORD already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 16
+[02-Feb-2026 10:05:43 UTC] PHP Warning:  Constant SMTP_ENCRYPTION already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 17
+[02-Feb-2026 10:05:43 UTC] PHP Warning:  Constant USE_SMTP already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 18
+[02-Feb-2026 10:25:23 UTC] PHP Warning:  Constant SMTP_HOST already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 13
+[02-Feb-2026 10:25:23 UTC] PHP Warning:  Constant SMTP_PORT already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 14
+[02-Feb-2026 10:25:23 UTC] PHP Warning:  Constant SMTP_USERNAME already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 15
+[02-Feb-2026 10:25:23 UTC] PHP Warning:  Constant SMTP_PASSWORD already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 16
+[02-Feb-2026 10:25:23 UTC] PHP Warning:  Constant SMTP_ENCRYPTION already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 17
+[02-Feb-2026 10:25:23 UTC] PHP Warning:  Constant USE_SMTP already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 18
+[02-Feb-2026 10:36:15 UTC] PHP Warning:  Constant SMTP_HOST already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 13
+[02-Feb-2026 10:36:15 UTC] PHP Warning:  Constant SMTP_PORT already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 14
+[02-Feb-2026 10:36:15 UTC] PHP Warning:  Constant SMTP_USERNAME already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 15
+[02-Feb-2026 10:36:15 UTC] PHP Warning:  Constant SMTP_PASSWORD already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 16
+[02-Feb-2026 10:36:15 UTC] PHP Warning:  Constant SMTP_ENCRYPTION already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 17
+[02-Feb-2026 10:36:15 UTC] PHP Warning:  Constant USE_SMTP already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 18
+[13-Feb-2026 06:46:17 UTC] PHP Warning:  Constant SMTP_HOST already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 13
+[13-Feb-2026 06:46:17 UTC] PHP Warning:  Constant SMTP_PORT already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 14
+[13-Feb-2026 06:46:17 UTC] PHP Warning:  Constant SMTP_USERNAME already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 15
+[13-Feb-2026 06:46:17 UTC] PHP Warning:  Constant SMTP_PASSWORD already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 16
+[13-Feb-2026 06:46:17 UTC] PHP Warning:  Constant SMTP_ENCRYPTION already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 17
+[13-Feb-2026 06:46:17 UTC] PHP Warning:  Constant USE_SMTP already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 18
+[13-Feb-2026 07:10:46 UTC] PHP Warning:  Constant SMTP_HOST already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 13
+[13-Feb-2026 07:10:46 UTC] PHP Warning:  Constant SMTP_PORT already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 14
+[13-Feb-2026 07:10:46 UTC] PHP Warning:  Constant SMTP_USERNAME already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 15
+[13-Feb-2026 07:10:46 UTC] PHP Warning:  Constant SMTP_PASSWORD already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 16
+[13-Feb-2026 07:10:46 UTC] PHP Warning:  Constant SMTP_ENCRYPTION already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 17
+[13-Feb-2026 07:10:46 UTC] PHP Warning:  Constant USE_SMTP already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 18
+[13-Feb-2026 08:16:24 UTC] PHP Warning:  Constant SMTP_HOST already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 13
+[13-Feb-2026 08:16:24 UTC] PHP Warning:  Constant SMTP_PORT already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 14
+[13-Feb-2026 08:16:24 UTC] PHP Warning:  Constant SMTP_USERNAME already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 15
+[13-Feb-2026 08:16:24 UTC] PHP Warning:  Constant SMTP_PASSWORD already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 16
+[13-Feb-2026 08:16:24 UTC] PHP Warning:  Constant SMTP_ENCRYPTION already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 17
+[13-Feb-2026 08:16:24 UTC] PHP Warning:  Constant USE_SMTP already defined in /home/az5v0bah4rbd/public_html/srishankaracancerhospital.org/patient-services/book-appointment.php on line 18
