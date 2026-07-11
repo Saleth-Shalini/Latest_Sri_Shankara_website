@@ -166,3 +166,152 @@
                 closeModal();
             }
         }
+
+        initPublicationsSection();
+
+        async function initPublicationsSection() {
+            const publicationsSection = document.querySelector('.publications-section-word');
+            if (!publicationsSection) {
+                return;
+            }
+
+            const searchInput = publicationsSection.querySelector('.publications-search-input-word');
+            const filterBtn = publicationsSection.querySelector('.publications-filter-btn-word');
+            const filterPanel = publicationsSection.querySelector('.publications-filter-panel-word');
+            const yearFilter = publicationsSection.querySelector('.publications-year-filter-word');
+            const typeFilter = publicationsSection.querySelector('.publications-type-filter-word');
+            const clearBtn = publicationsSection.querySelector('.publications-filter-clear-word');
+            const publicationsList = publicationsSection.querySelector('.publications-list-word');
+            const emptyMessage = publicationsSection.querySelector('.publications-empty-word');
+
+            const pageFile = window.location.pathname.split('/').pop() || '';
+            let publications = [];
+
+            try {
+                const response = await fetch('publications-data.json');
+                if (response.ok) {
+                    const data = await response.json();
+                    publications = data[pageFile] || [];
+                }
+            } catch (error) {
+                console.warn('Could not load publications data.', error);
+            }
+
+            const typeLabels = {
+                journal: 'Journal Article',
+                conference: 'Conference Paper',
+                book: 'Book / Chapter',
+                case: 'Case Report'
+            };
+
+            if (publicationsList) {
+                publicationsList.innerHTML = '';
+                publications.forEach(function(pub) {
+                    const item = document.createElement('li');
+                    item.className = 'publications-item-word';
+                    if (pub.year) {
+                        item.setAttribute('data-year', pub.year);
+                    }
+                    if (pub.type) {
+                        item.setAttribute('data-type', pub.type);
+                    }
+
+                    const title = document.createElement('span');
+                    title.className = 'publications-item-title-word';
+                    title.textContent = pub.title || 'Untitled publication';
+
+                    const meta = document.createElement('span');
+                    meta.className = 'publications-item-meta-word';
+                    meta.textContent = pub.meta || '';
+
+                    const typeBadge = document.createElement('span');
+                    typeBadge.className = 'publications-item-type-word';
+                    typeBadge.textContent = typeLabels[pub.type] || 'Publication';
+
+                    item.appendChild(title);
+                    if (pub.meta) {
+                        item.appendChild(meta);
+                    }
+                    item.appendChild(typeBadge);
+                    publicationsList.appendChild(item);
+                });
+            }
+
+            if (yearFilter) {
+                const years = [...new Set(publications.map(function(pub) { return pub.year; }).filter(Boolean))].sort().reverse();
+                years.forEach(function(year) {
+                    const option = document.createElement('option');
+                    option.value = year;
+                    option.textContent = year;
+                    yearFilter.appendChild(option);
+                });
+            }
+
+            const publicationItems = publicationsSection.querySelectorAll('.publications-item-word');
+
+            function applyPublicationsFilter() {
+                const query = (searchInput?.value || '').trim().toLowerCase();
+                const year = yearFilter?.value || '';
+                const type = typeFilter?.value || '';
+                let visibleCount = 0;
+
+                publicationItems.forEach(function(item) {
+                    const text = item.textContent.toLowerCase();
+                    const itemYear = item.getAttribute('data-year') || '';
+                    const itemType = item.getAttribute('data-type') || '';
+                    const matchesSearch = !query || text.includes(query);
+                    const matchesYear = !year || itemYear === year;
+                    const matchesType = !type || itemType === type;
+                    const isVisible = matchesSearch && matchesYear && matchesType;
+
+                    item.classList.toggle('is-hidden', !isVisible);
+                    if (isVisible) {
+                        visibleCount++;
+                    }
+                });
+
+                if (emptyMessage) {
+                    const hasItems = publicationItems.length > 0;
+                    if (!hasItems) {
+                        emptyMessage.classList.remove('is-hidden');
+                        emptyMessage.textContent = 'No publications listed yet. Please check back soon.';
+                    } else if (visibleCount === 0) {
+                        emptyMessage.classList.remove('is-hidden');
+                        emptyMessage.textContent = 'No publications match your search or filters.';
+                    } else {
+                        emptyMessage.classList.add('is-hidden');
+                    }
+                }
+            }
+
+            if (filterBtn && filterPanel) {
+                filterBtn.addEventListener('click', function() {
+                    const isOpen = filterPanel.classList.toggle('is-open');
+                    filterBtn.classList.toggle('is-active', isOpen);
+                    filterBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+                });
+            }
+
+            if (searchInput) {
+                searchInput.addEventListener('input', applyPublicationsFilter);
+            }
+
+            if (yearFilter) {
+                yearFilter.addEventListener('change', applyPublicationsFilter);
+            }
+
+            if (typeFilter) {
+                typeFilter.addEventListener('change', applyPublicationsFilter);
+            }
+
+            if (clearBtn) {
+                clearBtn.addEventListener('click', function() {
+                    if (searchInput) searchInput.value = '';
+                    if (yearFilter) yearFilter.value = '';
+                    if (typeFilter) typeFilter.value = '';
+                    applyPublicationsFilter();
+                });
+            }
+
+            applyPublicationsFilter();
+        }
